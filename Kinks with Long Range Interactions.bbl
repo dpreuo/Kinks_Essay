@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{manton-book}
+N.~Manton and P.~Sutcliffe.
+\newblock {\em Topological Solitons}.
+\newblock Cambridge Monographs on Mathematical Physics. Cambridge University
+  Press, 2004.
+
+\bibitem{manton-paper}
+N.S. Manton.
+\newblock Forces between kinks and antikinks with long-range tails.
+\newblock December 2018.
+
+\bibitem{spectral}
+Lloyd Trefethen.
+\newblock {\em Spectral Methods in MatLab}.
+\newblock SIAM, 2000.
+
+\bibitem{christov-num}
+Ivan~C. Christov, Robert~J. Decker, A.~Demirkaya, Vakhid~A. Gani, P.~G.
+  Kevrekidis, and R.~V. Radomskiy.
+\newblock Long-range interactions of kinks.
+\newblock {\em Phys. Rev. D}, 99:016010, Jan 2019.
+
+\bibitem{belendryasova}
+Ekaterina Belendryasova and Vakhid Gani.
+\newblock Scattering of the $\varphi^8$ kinks with power-law asymptotics.
+\newblock {\em Communications in Nonlinear Science and Numerical Simulation},
+  67, 08 2017.
+
+\bibitem{Roma_czukiewicz_2017}
+Tomasz Roma{\'{n}}czukiewicz.
+\newblock Could the primordial radiation be responsible for vanishing of
+  topological defects?
+\newblock {\em Physics Letters B}, 773:295--299, Oct 2017.
+
+\bibitem{rad_pressure}
+P\'eter Forg\'acs, \'Arp\'ad Luk\'acs, and Tomasz Roma\ifmmode~\acute{n}\else
+  \'{n}\fi{}czukiewicz.
+\newblock Negative radiation pressure exerted on kinks.
+\newblock {\em Phys. Rev. D}, 77:125012, Jun 2008.
+
+\end{thebibliography}
