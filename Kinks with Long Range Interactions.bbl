@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{manton-book}
 N.~Manton and P.~Sutcliffe.
@@ -6,38 +6,74 @@ N.~Manton and P.~Sutcliffe.
 \newblock Cambridge Monographs on Mathematical Physics. Cambridge University
   Press, 2004.
 
+\bibitem{rajaraman}
+R.~Rajaraman.
+\newblock {\em Solitons and Instantons}.
+\newblock North-Holland Personal Library. North Holland, 1987.
+
+\bibitem{kink-review}
+J.~Cuevas-Maraver P.~G.~Kevrekidis.
+\newblock {\em A dynamical perspective on the $\varphi^4$ model: Past, Present
+  and Future}.
+\newblock Springer-Verlag, 2019.
+
+\bibitem{lohe}
+M.~A. Lohe.
+\newblock Soliton structures in $p(\phi)2$.
+\newblock {\em Physical Review D}, 20(12):31203130, 1979.
+
+\bibitem{Goodman}
+R.~Goodman and R.~Haberman.
+\newblock Kink-antikink collisions in the $\phi^4$ equation: The n-bounce
+  resonance and the separatrix map.
+\newblock {\em Society for Industrial and Applied Mathematics}, 4:1195--1228,
+  01 2005.
+
 \bibitem{manton-paper}
-N.S. Manton.
+N.~S. Manton.
 \newblock Forces between kinks and antikinks with long-range tails.
-\newblock December 2018.
+\newblock {\em Journal of Physics A: Mathematical and Theoretical},
+  52(6):065401, 2019.
+
+\bibitem{christov-proper}
+I.~Christov, R.~Decker, A.~Demirkaya, V.~Gani, P~G.~Kevrekidis, A.~Khare, and
+  A.~Saxena.
+\newblock Kink-kink and kink-antikink interactions with long-range tails.
+\newblock {\em Physical Review Letters}, 2018.
+
+\bibitem{bogomolny}
+E.B. Bogomolny.
+\newblock The stability of classical solutions.
+\newblock {\em Soviet Journal of Nuclear Physics (English Translation)}, 24:4,
+  10 1976.
 
 \bibitem{spectral}
-Lloyd Trefethen.
+L.~Trefethen.
 \newblock {\em Spectral Methods in MatLab}.
 \newblock SIAM, 2000.
 
 \bibitem{christov-num}
-Ivan~C. Christov, Robert~J. Decker, A.~Demirkaya, Vakhid~A. Gani, P.~G.
-  Kevrekidis, and R.~V. Radomskiy.
+I.~C. Christov, R.~J. Decker, A.~Demirkaya, V.~A. Gani, P.~G. Kevrekidis, and
+  R.~V. Radomskiy.
 \newblock Long-range interactions of kinks.
-\newblock {\em Phys. Rev. D}, 99:016010, Jan 2019.
+\newblock {\em Phys. Rev. D}, 99:016010, 2019.
 
 \bibitem{belendryasova}
-Ekaterina Belendryasova and Vakhid Gani.
+E.~Belendryasova and V.~Gani.
 \newblock Scattering of the $\varphi^8$ kinks with power-law asymptotics.
 \newblock {\em Communications in Nonlinear Science and Numerical Simulation},
-  67, 08 2017.
+  67:414426, 2017.
 
 \bibitem{Roma_czukiewicz_2017}
-Tomasz Roma{\'{n}}czukiewicz.
+T.~Roma{\'{n}}czukiewicz.
 \newblock Could the primordial radiation be responsible for vanishing of
   topological defects?
-\newblock {\em Physics Letters B}, 773:295--299, Oct 2017.
+\newblock {\em Physics Letters B}, 773:295299, 2017.
 
 \bibitem{rad_pressure}
-P\'eter Forg\'acs, \'Arp\'ad Luk\'acs, and Tomasz Roma\ifmmode~\acute{n}\else
+P.~Forg\'acs, \'A. Luk\'acs, and T.~Roma\ifmmode~\acute{n}\else
   \'{n}\fi{}czukiewicz.
 \newblock Negative radiation pressure exerted on kinks.
-\newblock {\em Phys. Rev. D}, 77:125012, Jun 2008.
+\newblock {\em Physical Review D}, 77:125012, 2008.
 
 \end{thebibliography}
