@@ -38,7 +38,7 @@ The best-studied theory that contains kinks is $\phi^4$ theory \cite{kink-review
 \mathcal{L} = \frac{1}{2} \partial_\mu \phi \partial^\mu \phi  - \frac{1}{2} \left ( 1- \phi^2 \right )^2 \phi^4.
 \end{equation}
 These kinks are unusual in that they have long tails so are capable of interacting over very long distances. We will start by investigating the interactions between kinks and anti-kinks, first by constructing an analytic model for a well-separated pair in order to derive the magnitude and direction of the force acting between them. We follow this by numerically simulating the dynamics of the kinks, confirming the validity of the technique.\par
-Throughout this work, the primary difficulty is in picking the correct profile for a field containing two kinks. Furthermore, the accuracy of numerical simulations depends extremely sensitively on the choice of initial state, with bad initialisation leading to incorrect results for the strength and direction of force acting between the kinks \cite{belendryasova}. The reasons for this sensitivity are examined in the second half of this essay. Perturbations from the ideal initial state usually result in the emission of radiation as the field relaxes into the optimal shape. It is the interaction between the kinks and this radiation that is responsible for the incorrect dynamics observed. Thus we look at numerically modelling the interaction between a kink and radiation. We find that kinks in $\phi^8$ theory display unusual behaviour, being pushed in the same direction independent of the direction of incidence of the radiation. Finally two analytic models are proposed to better understand the reasons for this behaviour.
+Throughout this work, the primary difficulty is in picking the correct profile for a field containing two kinks. Furthermore, the accuracy of numerical simulations depends extremely sensitively on the choice of initial state, with bad initialisation leading to incorrect results for the strength and direction of force acting between the kinks such as in \cite{belendryasova}. The reasons for this sensitivity are examined in the second half of this essay. Perturbations from the ideal initial state usually result in the emission of radiation as the field relaxes into the optimal shape. It is the interaction between the kinks and this radiation that is responsible for the incorrect dynamics observed. Thus we look at numerically modelling the interaction between a kink and radiation. We find that kinks in $\phi^8$ theory display unusual behaviour, being pushed in the same direction independent of the direction of incidence of the radiation. Finally two analytic models are proposed to better understand the reasons for this behaviour.
 
 \section{Setting the Scene} \label{set_scene}
 We begin the discussion by defining the  one-dimensional field theory and deriving some of the fundamental properties of the solitons that emerge in this theory, namely the shape of the kink, including the asymptotic behaviour at its tails and a derivation of its mass.\par
@@ -51,34 +51,34 @@ We are working in Minkowski space, and will use the metric $\eta_{\mu\nu} = \tex
 \mathcal{L} = \frac{1}{2}\dot{\phi}^2 -  \frac{1}{2}{\phi'}^2   - V(\phi).
 \end{equation}
 Here dot denotes derivative with respect to time and prime represents spatial derivative.\par
-Using the Euler-Lagrange equation, one may derive the equation of motion (EOM) for the field.
+Using the Euler-Lagrange equation, one may derive the equation of motion (EOM) for the field,
 \begin{equation}\label{EOM}
-\ddot{\phi} - {\phi}'' + \frac{\partial V}{\partial \phi} = 0
+\ddot{\phi} - {\phi}'' + \frac{\partial V}{\partial \phi} = 0.
 \end{equation}
 The Lagrangian does not depend explicitly on the spacetime coordinates. This means that translations of the form $x^\mu \rightarrow x^\mu + \epsilon ^\mu$ transform the field by $\phi \rightarrow \phi + \epsilon^\mu \partial_\mu \phi$, and the Lagrangian by a total derivative, $\mathcal{L}\rightarrow \mathcal{L} + \epsilon^\mu \partial_\mu \mathcal{L}$. Thus, using Noether's theorem, the conserved energy-momentum tensor is
 \begin{align}
 T_{\mu \nu} &= \frac{\partial \mathcal{L}}{\partial \left (\partial^\mu \mathcal{L}\right )} \partial_\nu\phi - \eta_{\mu\nu} \mathcal{L}  \nonumber \\
 &=  \partial_\mu\phi \partial_\nu\phi - \eta_{\mu\nu} \mathcal{L}  
 \end{align}
-where $\partial_{\mu}{T^{\mu}}_{\nu} = 0$.\par
+with $\partial_{\mu}{T^{\mu}}_{\nu} = 0$.\par
 In particular, the energy and momentum density may be read directly from components of the tensor according to
  \begin{align}
 T_{00} &= \frac{1}{2}\dot{\phi}^2 +  \frac{1}{2}{\phi'}^2   +V(\phi) = \mathcal{E} \label{energy}\\
 T_{01} &= \dot{\phi} \phi'  = -\mathcal{P}. \label{momentum}
 \end{align}\par
- \begin{wrapfigure}{r}{0.45\textwidth}
-\centering
- \includegraphics[width=0.45\textwidth]{phi8_potential.png}
- \captionof{figure}{Potential in $\phi^8$ theory} \label{phi8pot}
-\end{wrapfigure}
-Kink solutions emerge when the potential has a degenerate set of global minima. Since the dynamics of the system are unaffected by transformations of the form $V(\phi)\rightarrow V(\phi) + c$ for any constant $c$, we may assume that the minima of the potential occur at a set of field values $\phi_n \in \Phi_{\textup{vac}}$, where $V(\phi_n) = 0$. Each minimum of the energy implies the existence a vacuum solution to the field equation consisting of a static flat field where $\phi(x) = \phi_n$ across all of spacetime. If the field is in one vacuum state as $x\rightarrow -\infty$ and a different vacuum as $x\rightarrow \infty$ then a kink appears as the field must interpolate between the two minima over some region of spacetime. This kink is topologically protected, since to remove the kink one would need to shift an infinite length of field from one vacuum into another, costing infinite energy. By organising the minima in order of increasing $\phi$, we can label kink solutions as interpolating from $\phi_n$ to $\phi_{n+1}$ as $x$ goes from $-\infty \rightarrow \infty$ and anti-kink solutions as going from $\phi_n$ to $\phi_{n-1}$.\par
-
- The simplest example of such a potential is $\phi^4$ theory, described by $V_{\phi^4} = \frac{1}{2} (1-\phi^2)^2$. This has a minimum at $\phi_{-} = -1$ and at $\phi_{+} = +1$ as shown in fig.~\ref{phi4pot}. It can be shown that kinks take the form $\phi(x) = \tanh(x)$, see \cite{manton-book}.\par
  \begin{figure}
 \centering
  \includegraphics[width=0.8\textwidth]{phi4_potential.png}
  \captionof{figure}{Potential and kink shapes in $\phi^4$ theory} \label{phi4pot}
 \end{figure}
+Kink solutions emerge when the potential has a degenerate set of global minima. Since the dynamics of the system are unaffected by transformations of the form $V(\phi)\rightarrow V(\phi) + c$ for any constant $c$, we may assume that the minima of the potential occur at a set of field values $\phi_n \in \Phi_{\textup{vac}}$, where $V(\phi_n) = 0$. Each minimum of the energy implies the existence a vacuum solution to the field equation consisting of a static flat field where $\phi(x) = \phi_n$ across all of spacetime. If the field is in one vacuum state as $x\rightarrow -\infty$ and a different vacuum as $x\rightarrow \infty$ then a kink appears as the field must interpolate between the two minima over some region of spacetime. This kink is topologically protected, since to remove the kink one would need to shift an infinite length of field from one vacuum into another, costing infinite energy. By organising the minima in order of increasing $\phi$, we can label kink solutions as interpolating from $\phi_n$ to $\phi_{n+1}$ as $x$ goes from $-\infty \rightarrow \infty$ and anti-kink solutions as going from $\phi_n$ to $\phi_{n-1}$.\par
+ The simplest example of such a potential is $\phi^4$ theory, described by $V_{\phi^4} = \frac{1}{2} (1-\phi^2)^2$. This has a minimum at $\phi_{-} = -1$ and at $\phi_{+} = +1$ as shown in fig.~\ref{phi4pot}. It can be shown that kinks take the form $\phi(x) = \tanh(x)$, see \cite{manton-book}.\par
+ \begin{wrapfigure}{r}{0.45\textwidth}
+\vspace{-10pt}
+\centering
+ \includegraphics[width=0.45\textwidth]{phi8_potential.png}
+ \captionof{figure}{Potential in $\phi^8$ theory} \label{phi8pot}
+\end{wrapfigure}
  In this work we shall focus on kinks that emerge in the $\phi^8$ potential $V(\phi) = \frac{1}{2} \left ( 1 - \phi^2\right)^2 \phi^4$. The potential has three minima, a pair of quadratic minima at $\phi = \pm1$ and a quartic minimum at $\phi= 0$. We will label kinks as interpolating between $\phi = 0 \rightarrow 1$. Anti-kinks go from $\phi = 1 \rightarrow 0$, mirror kinks from $\phi = -1 \rightarrow 0$ and anti-mirror-kinks from $\phi = 0\rightarrow -1$. This potential is plotted in fig.~\ref{phi8pot}. It is worth noting that for small deviations around the quartic minimum, the potential is approximately flat, whereas around the quadratic minima the potential is quadratic. This means that the field around $\phi = 0$ appears massless, whereas around $\phi = \pm1$ it is massive. Throughout this essay we will refer to the field around the $\phi = 0$ vacuum as the massless field and that around $\phi = \pm1$ as the massive field. We elaborate on this further in \textsection \ref{kink_radiation}.\par
  Our first task is to derive the form of the kink appearing in this theory, using the Bogomolny trick \cite{bogomolny}. The kink is a static solution to the EOM (eqn.~\ref{EOM}). This means that the time derivative may be discarded, resulting in the following nonlinear ODE:
  \begin{equation} \label{kink_equation}
@@ -115,9 +115,9 @@ $\phi(\pm\infty)$ will always be an element of $\Phi_{\textup{vac}} = \left \{ -
  \end{equation}
  and integrated to give an implicit expression for the shape of a kink
  \begin{equation}\label{long_kink_eq}
- x-A = \frac{1}{2}\log\left (\frac{1+\phi}{1-\phi} \right ) - \frac{1}{\phi}
+ x-A = \frac{1}{2}\log\left (\frac{1+\phi}{1-\phi} \right ) - \frac{1}{\phi}.
  \end{equation}
- where the parameter $A$ may be interpreted as determining the position of the kink. This expression must be inverted to give the form of the kink, shown in fig.~\ref{phi8kink}, although there is no explicit expression for the inverted kink profile $\phi_\textup{kink}(x)$. It is instructive to examine the asymptotic behaviour of the kink for $\phi$ close to 0 and close to 1. \par
+ Here the parameter $A$ may be interpreted as determining the position of the kink. This expression must be numerically inverted to give the form of the kink, shown in fig.~\ref{phi8kink}, as there is no explicit expression for the inverted kink profile $\phi_\textup{kink}(x)$. It is instructive to examine the asymptotic behaviour of the kink for $\phi$ close to 0 and close to 1. \par
   \begin{wrapfigure}{r}{0.45\textwidth}
 \centering
  \includegraphics[width=0.42\textwidth]{phi8_kink.png}
@@ -135,12 +135,14 @@ $\phi(\pm\infty)$ will always be an element of $\Phi_{\textup{vac}} = \left \{ -
  \begin{equation}
  \phi_{\textup{right}} = 1- \exp\left [ -2\left ( x - A + 1 - \frac{1}{2}\log2 \right ) \right ].
  \end{equation}
- In the case of $\phi^4$ theory the field decays exponentially quickly on both sides to the minima of the potential. However in the case of $\phi^8$ theory, the decay on the left of the kink has an extremely long tail, allowing for long range interactions.\par
+ In the case of $\phi^4$ theory, the field decays exponentially quickly on both sides to the minima of the potential. However in the case of $\phi^8$ theory, the decay on the left of the kink has an extremely long tail, allowing for long range interactions.\par
  Here it is worth mentioning the mechanical reinterpretation of the kink solution, since it will be useful later on. Equation \ref{kink_equation} may be interpreted as the equation of motion for a particle with `position' $\phi$ moving in a potential $-V(\phi)$. To produce a kink, the particle starts at $\phi = 0$, the maximum of the potential, with infinitesimal positive velocity. It moves quickly through the trough and then slows town to asymptotically approach the next maximum at $\phi = 1$. Since energy is conserved in this system (there is no drag term) the particle will come to rest at the next maximum, at the same value of potential the particle started with. This is shown in fig.~\ref{mech}. As the `particle' moves, it sweeps out the profile of the kink.\par
  \begin{wrapfigure}{L}{0.45\textwidth}
+ \vspace{-10pt}
 \centering
  \includegraphics[width=0.45\textwidth]{mech_kink.png}
  \captionof{figure}{Inverted potential felt by the particle in the mechanical reinterpretation} \label{mech}
+ \vspace{-23pt}
 \end{wrapfigure} 
  Finally we discuss the mass of the kink. From eqn.~\ref{energy_bogo} we can see that, once the Bogomolny equation is satisfied, the total energy of a kink is $2/15$. Thus, since the theory is Lorentz invariant, the kink may be interpreted as a particle-like object with mass = 2/15. Furthermore, since the Bogomolny equation is satisfied locally at every point in space, the total energy of the field between two points $x_1$ and $x_2$ can be calculated as $\left | W\left [ \phi(x_1)\right ] - W\left [ \phi(x_2)\right ]\right |$.
  
@@ -150,10 +152,11 @@ $\phi(\pm\infty)$ will always be an element of $\Phi_{\textup{vac}} = \left \{ -
 
 \subsection{Analytic Model}\label{kink-kink-analytic}
   \begin{wrapfigure}{R}{0.5\textwidth}
-  %\vspace{-50pt}
+  \vspace{-10pt}
 \centering
  \includegraphics[width=0.5\textwidth]{kink-kink_init.png}
  \captionof{figure}{A possible state containing a kink and anti-kink} \label{kink_kink_state}
+ \vspace{-10pt}
 \end{wrapfigure} 
 To calculate the force between an interacting kink and anti-kink pair, we must make a guess at an appropriate field containing these two objects. In particular, since the system we are looking at is no longer static - the kinks are accelerating towards one another - it will be necessary to account for the distortion of the kink profile caused by this acceleration. Let us start with a field in which the anti-kink is at position $-A(t)$, the kink is at $A(t)$ and the field is initially at rest.\par
 The kink and anti-kink have identical form, but reflected over the y-axis, therefore it is reasonable to propose a configuration that is symmetric over the y-axis, as shown in fig.~\ref{kink_kink_state}. Here the anti-kink is positioned at $x = -50$ and the kink is at $x= 50$. Note that the field between the kinks should not touch the x-axis. Additionally, the field will be distorted from the static kink solution, with $\phi' = 0$ at $x=0$.\par
@@ -188,14 +191,14 @@ F_\textup{kink} = - V[\phi(0)].
  \begin{equation} \label{acc_kink}
  \chi'' - a\chi' - \frac{\drv V }{\drv \chi}=0.
  \end{equation}
-In the mechanical interpretation, this may be understood as describing the dynamics of a particle moving in the same potential as fig.~\ref{mech}, but with a negative drag term, $-a$. The effect of $a$ is to add energy to the system as the particle moves under the influence of $V(\chi)$. The solution we are looking for corresponds to the particle starting with 0 velocity ($\chi' = 0$) at a point $\chi >0$ and gaining just enough energy over its motion to make it to the top of the maxima in potential at $\chi=1$, where it comes to rest. For each value of $a$ there is a position $\chi(0)$ such that a particle starting at that point and moving under drag $-a$ will gain just enough energy to reach the maximum at $\chi=1$ and go no further, resulting in a valid kink solution. This will correspond to a kink that starts at a finite $\chi(0)>0$, with flat gradient, $\chi'(0)=0$ and tends to $\chi=1$ as $x \rightarrow \infty$.\par
-In what follows, we assume that the majority of the influence of the drag term is exerted on the long range tail of the kink. This makes sense since the tail is extremely long. The drag force is weaker in the tail region than it is around the centre of the kink, but not substantially so, and acts over a much larger region. To compare the accelerating kink with the static kink derived in \textsection \ref{set_scene} we match the shapes of the long tails of both, in particular, aligning them so that the extrapolation of their $\frac{1}{x}$ tails diverge at the same point. This is shown in fig.~\ref{tails}, where the point at which the tail diverges is marked with a dashed line.\par
+In the mechanical interpretation, this may be understood as describing the dynamics of a particle moving in the same potential as fig.~\ref{mech}, but with a negative drag term, $-a$. The effect of $a$ is to add energy to the system as the particle moves under the influence of $V(\chi)$. The solution we are looking for corresponds to the particle starting from rest ($\chi' = 0$) at a point $\chi >0$ and gaining just enough energy over its motion to make it to the top of the maximum in potential at $\chi=1$, where it returns asymptotically to rest. For each value of $a$ there is a position $\chi(0)$ such that a particle starting at that point and moving under drag $-a$ will gain just enough energy to reach the maximum at $\chi=1$ and go no further, resulting in a valid kink solution. This will correspond to a kink that starts at a finite $\chi(0)>0$, with flat gradient, $\chi'(0)=0$ and tends to $\chi=1$ as $x \rightarrow \infty$.\par
+In what follows, we assume that the majority of the influence of the drag term is exerted on the long-range tail of the kink. This makes sense since the tail is extremely long. The drag force is weaker in the tail region than it is around the centre of the kink, but not substantially so, and acts over a much larger region. To compare the accelerating kink with the static kink derived in \textsection \ref{set_scene} we match the shapes of the long tails of both, in particular, aligning them so that the extrapolation of their $\frac{1}{x}$ tails diverge at the same point. This is shown in fig.~\ref{tails}, where the point at which the tail diverges is marked with a dashed line.\par
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{asym_tails.png}
 \captionof{figure}{Static and accelerating kink with extrapolated tail behaviour. In both cases blue depicts the shape of the kink and orange shows the extrapolated tail.} \label{tails}
 \end{figure}
-We can assume that $\chi$ takes the approximate form of the undeformed kink over the long tail, ensuring that it is a solution of the Bogomolny equation ($\chi' = \frac{\drv W }{\drv \chi}$), with $W$ defined in eqn.~\ref{dw}. Thus, eqn.~\ref{acc_kink} becomes
+We can assume that $\chi$ approximately takes the form of an undeformed kink over its long tail, ensuring that it is a solution of the Bogomolny equation ($\chi' = \frac{\drv W }{\drv \chi}$), with $W$ defined in eqn.~\ref{dw}. Thus, eqn.~\ref{acc_kink} becomes
 \begin{equation}\label{VW}
 \chi'' -\frac{\drv}{\drv \chi}\left ( aW + V \right ) =0.
 \end{equation}
@@ -231,14 +234,14 @@ which finally gives
 \begin{equation}
  \left( \frac{4a}{15}\right)^{\frac{1}{4}} A =\frac{1}{\sqrt{2}}\frac{\Gamma \left( \frac{1}{4}\right)^2}{4\sqrt{\pi}}.
 \end{equation}
-Plugging this result into eqn.~\ref{force} and evaluating gives:
+Plugging this result into eqn.~\ref{force} and evaluating gives
 \begin{equation} \label{prediction}
 F \simeq -\frac{1.477}{A^4}.
 \end{equation}
 
-\subsection{Numerical Work} \label{kink_kink_comp}
+\subsection{Numerical Simulation of Interacting Kinks} \label{kink_kink_comp}
 The result calculated in the previous section is now tested by numerically solving the equations of motion for an interacting kink and anti-kink. The primary difficulty once again is in making a good guess for the initial shape of a field containing the kink-anti-kink pair.\par
-To simulate the field, we must numerically solve the partial differential equations of motion (eqn.~\ref{EOM}), given the initial state of the field and its derivative with respect to time, $\phi(x;t=0)$ and $\dot{\phi}(x;t=0)$. This is done by splitting up our region of space into $N_x$ discrete steps, in this case we used $N_x = 2048$\footnote{In later calculations we will calculate the discrete Fourier transform of the field. Setting the array to have a size $N_x = 2^k$ for an integer k will allow the discrete fourier transform to be calculated in $O(\log N_x)$ time, rather than $O(N_x^2)$, using the fast fourier transform algorithm, providing us with a substantial speedup.}. Thus, the field at time 0 becomes a 2048-entry array $\phi_i$. Spectral methods are used to approximate the spatial derivatives of $\phi_i$ in eqn.~\ref{EOM}, based on \cite{spectral}. This technique relies on creating an interpolating function for $\phi(x)$ from $\phi_i$, and outputting the derivatives of that function. The method is extremely accurate, but comes with two important limitations. The first is that results are highly sensitive to the smoothness of the input array. Any discontinuity in the array or its first few derivatives will lead to substantial inaccuracies. Secondly, the method only works in systems with periodic boundary conditions. It is possible to express the spectral differentiation operator as a matrix $D_{ij}$, and we will refer to it as such in equations written here, however in practice it is much faster to compute it using discrete fourier transforms, which is the technique used in our calculations. A fuller explanation of this method is given in appendix \ref{spectral}. In our case, we modelled the interacting kinks over a spatial distance $x_\textup{max} = 200$ with periodic boundary conditions. The PDE (eqn.~\ref{EOM}) may now be expressed in terms of the $N_x$ entries of an array $\phi_i(t)$ as a set of 2048 coupled nonlinear second-order ordinary differential equations:
+To simulate the field, we must numerically solve the partial differential equations of motion (eqn.~\ref{EOM}), given the initial state of the field and its derivative with respect to time, $\phi(x;t=0)$ and $\dot{\phi}(x;t=0)$. This is done by splitting up our region of space into $N_x$ discrete steps, in this case we used $N_x = 2048$\footnote{In later calculations we will calculate the discrete Fourier transform of the field. Setting the array to have a size $N_x = 2^k$ for an integer k will allow the discrete fourier transform to be calculated in $O(\log N_x)$ time, rather than $O(N_x^2)$, using the fast fourier transform algorithm, providing us with a substantial speedup.}. Thus, the field at time 0 becomes a 2048-entry array $\phi_i$. Spectral methods are used to approximate the spatial derivatives of $\phi_i$ in eqn.~\ref{EOM}, based on \cite{spectral}. This technique relies on creating an interpolating function for $\phi(x)$ from $\phi_i$, and outputting the derivatives of that function. The method is extremely accurate, but comes with two important limitations. The first is that results are highly sensitive to the smoothness of the input array. Any discontinuity in the array or its first few derivatives will lead to substantial inaccuracies. Secondly, the method only works in systems with periodic boundary conditions. It is possible to express the spectral differentiation operator as a matrix $D_{ij}$, and we will refer to it as such in equations written here, however in practice it is much faster to compute it using discrete Fourier transforms, which is the technique used in our calculations. In our case, we modelled the interacting kinks over a spatial distance $x_\textup{max} = 200$ with periodic boundary conditions. The PDE (eqn.~\ref{EOM}) may now be expressed in terms of the $N_x$ entries of an array $\phi_i(t)$ as a set of 2048 coupled nonlinear second-order ordinary differential equations:
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{field_ansatze.png}
@@ -253,14 +256,14 @@ Setting $\phi_i(t) = u_i(t)$ and $\dot{\phi_i}(t) = v_i(t)$ we can re-express th
 \dot{u_i} &= v_i .
 \end{align}
  These equations can be solved in Python using the Scipy library's built-in ODE solver, \texttt{odeint}, as an initial value problem for a specified $u_{j}(0)$ and $v_{j}(0)$. Tests are conducted to verify the accuracy of this method, ensuring that the results obey momentum and energy-conservation. These are detailed in appendix \ref{tests}, confirming that the method works accurately.\par
- As in \textsection \ref{kink-kink-analytic}, the primary complication here is in choosing an appropriate starting configuration for the field containing an interacting kink and anti-kink. Due to the long-range nature of the kink's tail, it is not possible to sum the static field for a kink at position $A$ with that of an anti-kink at position $-A$. This is because the long range tails decay so slowly that they pass through the other kink to the side that should have exponential decay to the vacuum, disturbing the field from its vacuum value.\par
+ As in \textsection \ref{kink-kink-analytic}, the primary complication here is in choosing an appropriate starting configuration for the field containing an interacting kink and anti-kink. Due to the long-range nature of the kink's tail, it is not possible to sum the static field for a kink at position $A$ with that of an anti-kink at position $-A$. This is because the long range tails decay so slowly that they pass through the other kink to the side that should be exponentially decaying to the vacuum, disturbing the field from its vacuum value.\par
  Our approach closely follows that taken in \cite{christov-num}. The first step is to make a crude guess at the shape of the field. In this case we have used the split-domain ansatz, where the field for $x>0$ is taken as that of a kink at $x=A$, and the field at $x<0$ is that of an anti-kink at $x=-A$. The two fields are glued together at $x=0$, leaving a discontinuity in the first derivative.\par
  We are looking for the field that comes closest to approximately solving the static-field equations of motion, while still containing a kink at $A$ and an anti-kink at $-A$. Thus, we may improve our guess for the initial field using a weighted nonlinear least squares minimisation of the function
  \begin{equation}\label{optimise}
  \mathcal{I}[\phi] = \left \| D^2\phi -V'\left( \phi \right) \right \|^2 + C\left | \phi(A) - \phi_0 \right |^2 + C\left | \phi(-A) - \phi_0 \right |^2
  \end{equation}
  where $\phi_0$ is $\phi_{\textup{kink}}(x=0,A=0) \approx 0.8335$ and C is a sufficiently large number, we have taken $C = 50$. The first term here is the static part of the equations of motion, ensuring that the optimised field is close to a static solution. The second part ensures that the field has a kink at $A$ and an anti-kink at $-A$ by forcing the optimisation to keep $\phi$ close to $\phi_0$ at $x=A$ and $x=-A$. The optimised solution for $A=50$ is shown in fig.~\ref{ansatze}.\par
- Now that we have reliable methods in place to initialise our field values and propagate them forward in time, we are ready to calculate the force acting between a kink and anti-kink. Our first step is to initialise the fields for a number of values of $A$. Here we have chosen to look from $A=10$ to $A = 90$, stepping up in intervals of 5. After optimisation, using eqn.~\ref{optimise}, the fields are evolved in time from $t=0$ to $t=1000$. Figure \ref{field_evolutions} shows the results for $A =$20, 30 and 70.\par
+ Now that we have reliable methods in place to initialise our field values and propagate them forward in time, we are ready to calculate the force acting between a kink and anti-kink. Our first step is to initialise the fields for a number of values of $A$. Here we have chosen to look from $A=10$ to $A = 90$, stepping up in intervals of 5. After optimisation, using eqn.~\ref{optimise}, the fields are evolved in time from $t=0$ to $t=1000$. Figure \ref{field_evolutions} shows the results for $A =$20, 30 and 70. Full results can be found at https://github.com/dpreuo/Kinks-with-Long-range-interactions.\par
  \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{field_values}
@@ -277,6 +280,28 @@ Figure \ref{force_graphs} shows the results for $FA^4$ as a function of time for
 \includegraphics[width=0.3\textwidth]{force50}
 \includegraphics[width=0.3\textwidth]{force65}
 \captionof{figure}{Plots of force coefficients against time for starting fields with $A=$ 75, 50 and 35. The value predicted in \textsection \ref{kink-kink-analytic} is marked with a dashed line.} \label{force_graphs}
+\end{figure}
+
+\subsection{Numerical Model for an Accelerating Kink}
+We now take a different approach to numerically finding the strength of the force acting between a kink and anti-kink, focussing on carefully approximating the profile of an accelerating kink. Our starting point is eqn.~\ref{acc_kink}:
+ \begin{equation}
+ \chi'' - a\chi' - \frac{\drv V }{\drv \chi}=0.
+ \end{equation}
+ Note that in deriving this differential equation, the only approximation we took was to assume that $\dot{A}$ can be ignored, thus it is exact for deriving the force acting on a static kink, before it has started to move under acceleration.\par
+   \begin{wrapfigure}{r}{0.5\textwidth}
+ \vspace{-10pt}
+\centering
+ \includegraphics[width=0.5\textwidth]{over_under.png}
+ \captionof{figure}{Plot of the particle's motion for three different values of $a$, with $\chi_0 = 0.003$. The correct value of $a$ is  $a_\textup{c} =  2.9763... \times 10^{-6}$ , where the overshooting value was $a_\textup{c} +\delta$ and the undershooting value was $a_\textup{c} -\delta$, for $\delta = 1\times 10^{-6}$} \label{over_under}
+\end{wrapfigure} 
+ We examine the differential equation through the lens of the mechanical interpretation, viewing it as describing a particle that starts at a position $\chi(0)$ and moves under negative drag term $-a$ in the potential $- \frac{\drv V }{\drv \chi}$. As explained in \textsection~\ref{kink-kink-analytic}, for every value of $\chi(0)$ there is a unique corresponding value of $a$ such that the motion of the particle will correspond to a valid kink solution. If a is too large, the particle will gain too much energy as it moves through the potential, overshooting the maximum and `falling off' the other side, accelerating towards $\chi \rightarrow +\infty$. If $a$ is too small, the particle will not gain enough energy as it moves through the potential, this means it won't make it up to the maximum of the potential at  $\chi=1$ and will turn back on itself, moving back towards negative $\chi$.\par
+ This differential equation is easily solved, again using python's inbuilt ODE solver, \texttt{odeint}. We start with a choice of initial values, $\chi(0)$, $\chi'(0) = 0$ and $a$, and solve it for $\chi(x)$ for $x$ discretised over an array of length 2048.\par
+To determine the correct value of $a$, given $\chi(0)$, we first decide on an upper and lower bound for $a$, $a_\textup{max}$ and $a_\textup{min}$, where we are certain that the particle moving under $\chi(0)$ with $a_\textup{max}$ will overshoot and a particle moving under $a_\textup{min}$ will undershoot. Now we determine the motion of the particle moving under $a_\textup{avg} = \frac{1}{2} \left ( a_\textup{max} + a_\textup{min} \right )$. If the motion under $a_\textup{avg}$ overshoots we know that the correct value of $a$ is somewhere between $a_\textup{min}$ and $a_\textup{avg}$, similarly if it undershoots we know that the correct value is between $a_\textup{avg}$ and $a_\textup{max}$. Thus we set a new pair of bounds $a_\textup{min, new}$ and $a_\textup{max, new}$ and repeat the process. Every time we iterate this step we are halving the size of the window that the correct value of $a$ is in, so we converge very quickly to the correct value. Figure \ref{over_under} shows the motion of the particle for three values of $a$, one with an overshoot, one that is correct and one that causes it to undershoot.\par
+Once we have determined the correct value of $a$, we automatically get an expression for the shape of an accelerating kink for our chosen $\chi(0)$ as the solution of our differential equation. Now the only thing left to do is to find the position of the center of the kink, A, by looking for the point in space where the kink crosses $\chi(A) = \phi_\textup{kink}(x=0) \approx 0.8335$. The force acting on the kink is given by eqn.~\ref{force}, $F = -V[\chi(0)]$. Thus we have arrived at a set of values for the force acting on the kink as a function of the kink separation. The results of this are plotted in fig.`\ref{force_distance_trick}, plotted against the predicted relationship derived in \textsection~\ref{kink-kink-analytic}, $F = 1.4771A^{-4}$. As can clearly be seen, the results are extremely close, with some deviation from the predicted values as the kinks get closer together, which is expected since our analytic methods relied on the kinks being well separated.
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{force_distance_trick.png}
+\captionof{figure}{Left plot shows the relationship between the kink separation and the force acting between the kinks. On the right is the same data plotted on a log-log scale. The predicted results have a polynomial relationship and so appear here as a straight line. It can be seen that the numerically calculated force is slightly weaker than expected when the kinks are close, but extremely close to prediction once the kinks are well separated.} \label{force_distance_trick}
 \end{figure}
 
  \section{Kink-Radiation Interactions}\label{kink_radiation}

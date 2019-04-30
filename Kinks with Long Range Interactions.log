@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.15)  27 APR 2019 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.15)  30 APR 2019 16:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -362,19 +362,19 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<phi8_potential.png, id=15, 462.528pt x 346.1733pt>
-File: phi8_potential.png Graphic file (type png)
- <use phi8_potential.png>
-Package pdftex.def Info: phi8_potential.png used on input line 71.
-(pdftex.def)             Requested size: 217.66211pt x 162.90747pt.
-
-<phi4_potential.png, id=17, 838.332pt x 315.8199pt>
+<phi4_potential.png, id=15, 838.332pt x 315.8199pt>
 File: phi4_potential.png Graphic file (type png)
  <use phi4_potential.png>
-Package pdftex.def Info: phi4_potential.png used on input line 79.
+Package pdftex.def Info: phi4_potential.png used on input line 71.
 (pdftex.def)             Requested size: 386.95897pt x 145.77527pt.
 
-[2 <./phi8_potential.png>] [3 <./phi4_potential.png>]
+[2 <./phi4_potential.png>] <phi8_potential.png, id=22, 462.528pt x 346.1733pt>
+File: phi8_potential.png Graphic file (type png)
+
+<use phi8_potential.png>
+Package pdftex.def Info: phi8_potential.png used on input line 79.
+(pdftex.def)             Requested size: 217.66211pt x 162.90747pt.
+ [3 <./phi8_potential.png>]
 <phi8_kink.png, id=28, 462.528pt x 346.896pt>
 File: phi8_kink.png Graphic file (type png)
  <use phi8_kink.png>
@@ -384,51 +384,57 @@ Package pdftex.def Info: phi8_kink.png used on input line 123.
 <mech_kink.png, id=29, 1365.1pt x 1128.215pt>
 File: mech_kink.png Graphic file (type png)
  <use mech_kink.png>
-Package pdftex.def Info: mech_kink.png used on input line 142.
+Package pdftex.def Info: mech_kink.png used on input line 143.
 (pdftex.def)             Requested size: 217.66211pt x 179.88112pt.
  [4 <./phi8_kink.png>] <kink-kink_init.png, id=35, 667.7748pt x 429.2838pt>
 File: kink-kink_init.png Graphic file (type png)
 
 <use kink-kink_init.png>
-Package pdftex.def Info: kink-kink_init.png used on input line 155.
+Package pdftex.def Info: kink-kink_init.png used on input line 157.
 (pdftex.def)             Requested size: 241.84843pt x 155.47218pt.
  [5 <./mech_kink.png> <./kink-kink_init.png>] [6]
 <asym_tails.png, id=45, 865.0719pt x 348.3414pt>
 File: asym_tails.png Graphic file (type png)
  <use asym_tails.png>
-Package pdftex.def Info: asym_tails.png used on input line 195.
+Package pdftex.def Info: asym_tails.png used on input line 198.
 (pdftex.def)             Requested size: 435.32422pt x 175.29178pt.
  [7 <./asym_tails.png>] <field_ansatze.png, id=51, 1040.688pt x 336.7782pt>
 File: field_ansatze.png Graphic file (type png)
 
 <use field_ansatze.png>
-Package pdftex.def Info: field_ansatze.png used on input line 244.
+Package pdftex.def Info: field_ansatze.png used on input line 247.
 (pdftex.def)             Requested size: 483.69687pt x 156.53343pt.
  [8] [9 <./field_ansatze.png>]
 <field_values.png, id=62, 5781.6pt x 1445.4pt>
 File: field_values.png Graphic file (type png)
  <use field_values.png>
-Package pdftex.def Info: field_values.png used on input line 266.
+Package pdftex.def Info: field_values.png used on input line 269.
 (pdftex.def)             Requested size: 483.69687pt x 120.9055pt.
 
 <force25.pdf, id=63, 462.52798pt x 346.89601pt>
 File: force25.pdf Graphic file (type pdf)
  <use force25.pdf>
-Package pdftex.def Info: force25.pdf used on input line 276.
+Package pdftex.def Info: force25.pdf used on input line 279.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
 
 <force50.pdf, id=64, 462.52798pt x 346.89601pt>
 File: force50.pdf Graphic file (type pdf)
  <use force50.pdf>
-Package pdftex.def Info: force50.pdf used on input line 277.
+Package pdftex.def Info: force50.pdf used on input line 280.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
 
 <force65.pdf, id=65, 462.52798pt x 346.89601pt>
 File: force65.pdf Graphic file (type pdf)
  <use force65.pdf>
-Package pdftex.def Info: force65.pdf used on input line 278.
+Package pdftex.def Info: force65.pdf used on input line 281.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
- [10 <./field_values.png>] [11 <./force25.pdf> <./force50.pdf
+ [10 <./field_values.png>] <over_under.png, id=70, 462.528pt x 346.896pt>
+File: over_under.png Graphic file (type png)
+
+<use over_under.png>
+Package pdftex.def Info: over_under.png used on input line 294.
+(pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
+ [11 <./force25.pdf> <./force50.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./force50.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
@@ -436,71 +442,73 @@ n: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./force65.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
->] <wavepacket.png, id=176, 613.5723pt x 275.3487pt>
+> <./over_under.png>]
+<force_distance_trick.png, id=178, 821.7099pt x 264.5082pt>
+File: force_distance_trick.png Graphic file (type png)
+
+<use force_distance_trick.png>
+Package pdftex.def Info: force_distance_trick.png used on input line 303.
+(pdftex.def)             Requested size: 435.32422pt x 140.13216pt.
+ [12 <./force_distance_trick.png>]
+<wavepacket.png, id=183, 613.5723pt x 275.3487pt>
 File: wavepacket.png Graphic file (type png)
  <use wavepacket.png>
-Package pdftex.def Info: wavepacket.png used on input line 320.
+Package pdftex.def Info: wavepacket.png used on input line 345.
 (pdftex.def)             Requested size: 241.84843pt x 108.53255pt.
-
-[12 <./wavepacket.png>] <kink_rad_init.png, id=181, 1040.688pt x 340.3917pt>
+ [13]
+<kink_rad_init.png, id=188, 1040.688pt x 340.3917pt>
 File: kink_rad_init.png Graphic file (type png)
-
-<use kink_rad_init.png>
-Package pdftex.def Info: kink_rad_init.png used on input line 336.
+ <use kink_rad_init.png>
+Package pdftex.def Info: kink_rad_init.png used on input line 361.
 (pdftex.def)             Requested size: 386.95897pt x 126.56622pt.
 
-<MomentumDensityk15Massive.pdf, id=182, 462.52798pt x 346.89601pt>
+[14 <./wavepacket.png> <./kink_rad_init.png>]
+<MomentumDensityk15Massive.pdf, id=194, 462.52798pt x 346.89601pt>
 File: MomentumDensityk15Massive.pdf Graphic file (type pdf)
 
 <use MomentumDensityk15Massive.pdf>
-Package pdftex.def Info: MomentumDensityk15Massive.pdf used on input line 342.
+Package pdftex.def Info: MomentumDensityk15Massive.pdf used on input line 367.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
 
-<MomentumDensityk20Massive.pdf, id=183, 462.52798pt x 346.89601pt>
+<MomentumDensityk20Massive.pdf, id=195, 462.52798pt x 346.89601pt>
 File: MomentumDensityk20Massive.pdf Graphic file (type pdf)
 
 <use MomentumDensityk20Massive.pdf>
-Package pdftex.def Info: MomentumDensityk20Massive.pdf used on input line 343.
+Package pdftex.def Info: MomentumDensityk20Massive.pdf used on input line 368.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
 
-<MomentumDensityk275Massive.pdf, id=184, 462.52798pt x 346.89601pt>
+<MomentumDensityk275Massive.pdf, id=196, 462.52798pt x 346.89601pt>
 File: MomentumDensityk275Massive.pdf Graphic file (type pdf)
 
 <use MomentumDensityk275Massive.pdf>
-Package pdftex.def Info: MomentumDensityk275Massive.pdf used on input line 344.
+Package pdftex.def Info: MomentumDensityk275Massive.pdf used on input line 369.
 
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
 
-<MomentumDensityk15Massless.pdf, id=185, 462.52798pt x 346.89601pt>
+<MomentumDensityk15Massless.pdf, id=197, 462.52798pt x 346.89601pt>
 File: MomentumDensityk15Massless.pdf Graphic file (type pdf)
 
 <use MomentumDensityk15Massless.pdf>
-Package pdftex.def Info: MomentumDensityk15Massless.pdf used on input line 345.
+Package pdftex.def Info: MomentumDensityk15Massless.pdf used on input line 370.
 
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
 
-<MomentumDensityk20Massless.pdf, id=186, 462.52798pt x 346.89601pt>
+<MomentumDensityk20Massless.pdf, id=198, 462.52798pt x 346.89601pt>
 File: MomentumDensityk20Massless.pdf Graphic file (type pdf)
 
 <use MomentumDensityk20Massless.pdf>
-Package pdftex.def Info: MomentumDensityk20Massless.pdf used on input line 346.
+Package pdftex.def Info: MomentumDensityk20Massless.pdf used on input line 371.
 
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
 
-<MomentumDensityk275Massless.pdf, id=187, 462.52798pt x 346.89601pt>
+<MomentumDensityk275Massless.pdf, id=199, 462.52798pt x 346.89601pt>
 File: MomentumDensityk275Massless.pdf Graphic file (type pdf)
 
 <use MomentumDensityk275Massless.pdf>
-Package pdftex.def Info: MomentumDensityk275Massless.pdf used on input line 347
+Package pdftex.def Info: MomentumDensityk275Massless.pdf used on input line 372
 .
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
- [13 <./kink_rad_init.png>]
-<mass_term.png, id=193, 513.117pt x 409.0482pt>
-File: mass_term.png Graphic file (type png)
- <use mass_term.png>
-Package pdftex.def Info: mass_term.png used on input line 378.
-(pdftex.def)             Requested size: 217.66211pt x 173.5155pt.
- [14 <./MomentumDensityk15Massive.pdf> <./MomentumDensityk20Massive.pdf
+ [15 <./MomentumDensityk15Massive.pdf> <./MomentumDensityk20Massive.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./MomentumDensityk20Massive.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -520,67 +528,75 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./MomentumDensityk20Massless
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./MomentumDensityk275Massles
 s.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [15 <./mass_term.png>] <force_left.png, id=403, 462.528pt x 346.896pt>
+>] <mass_term.png, id=404, 513.117pt x 409.0482pt>
+File: mass_term.png Graphic file (type png)
+ <use mass_term.png>
+Package pdftex.def Info: mass_term.png used on input line 403.
+(pdftex.def)             Requested size: 217.66211pt x 173.5155pt.
+ [16 <./mass_term.png>] [17] <force_left.png, id=413, 462.528pt x 346.896pt>
 File: force_left.png Graphic file (type png)
 
 <use force_left.png>
-Package pdftex.def Info: force_left.png used on input line 446.
+Package pdftex.def Info: force_left.png used on input line 471.
 (pdftex.def)             Requested size: 193.47578pt x 145.10777pt.
- <force_right.png, id=404, 462.528pt x 346.896pt>
+ <force_right.png, id=414, 462.528pt x 346.896pt>
 File: force_right.png Graphic file (type png)
 
 <use force_right.png>
-Package pdftex.def Info: force_right.png used on input line 447.
+Package pdftex.def Info: force_right.png used on input line 472.
 (pdftex.def)             Requested size: 193.47578pt x 145.10777pt.
- [16] [17 <./force_left.png> <./force_right.png>]
-<potential_averaged.png, id=413, 462.528pt x 346.896pt>
+ [18 <./force_left.png> <./force_right.png>]
+<potential_averaged.png, id=420, 462.528pt x 346.896pt>
 File: potential_averaged.png Graphic file (type png)
 
 <use potential_averaged.png>
-Package pdftex.def Info: potential_averaged.png used on input line 498.
+Package pdftex.def Info: potential_averaged.png used on input line 523.
 (pdftex.def)             Requested size: 217.66211pt x 163.24757pt.
- [18 <./potential_averaged.png>] [19]
-(./Kinks with Long Range Interactions.bbl) [20]
-<test_field_energy.png, id=426, 968.418pt x 369.2997pt>
+ [19] [20 <./potential_averaged.png>]
+(./Kinks with Long Range Interactions.bbl [21])
+<test_field_energy.png, id=433, 968.418pt x 369.2997pt>
 File: test_field_energy.png Graphic file (type png)
 
 <use test_field_energy.png>
-Package pdftex.def Info: test_field_energy.png used on input line 535.
+Package pdftex.def Info: test_field_energy.png used on input line 560.
 (pdftex.def)             Requested size: 435.32422pt x 166.00864pt.
- [21 <./test_field_energy.png>]
-(./Kinks with Long Range Interactions.aux) ) 
+ [22] [23 <./test_field_energy.png>]
+(./Kinks with Long Range Interactions.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4338 strings out of 493089
- 65132 string characters out of 6134842
- 139032 words of memory out of 5000000
- 7731 multiletter control sequences out of 15000+600000
+ 4350 strings out of 493089
+ 65394 string characters out of 6134842
+ 139052 words of memory out of 5000000
+ 7741 multiletter control sequences out of 15000+600000
  14056 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,38p,2074b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msam10.pfb>
-Output written on "Kinks with Long Range Interactions.pdf" (21 pages, 1751202 b
+ 38i,11n,38p,2001b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on "Kinks with Long Range Interactions.pdf" (23 pages, 1910774 b
 ytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
+ 499 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
