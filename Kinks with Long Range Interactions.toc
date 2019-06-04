@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Setting the Scene}{2}
+\contentsline {section}{\numberline {3}Kink-Kink Interactions}{5}
+\contentsline {subsection}{\numberline {3.1}Analytic Model}{5}
+\contentsline {subsection}{\numberline {3.2}Numerical Simulation of Interacting Kinks}{8}
+\contentsline {subsection}{\numberline {3.3}Numerical Model for an Accelerating Kink}{11}
+\contentsline {section}{\numberline {4}Kink-Radiation Interactions}{13}
+\contentsline {subsection}{\numberline {4.1}Numerical Work}{14}
+\contentsline {subsection}{\numberline {4.2}Analytic Models}{15}
+\contentsline {subsubsection}{\numberline {4.2.1}Perturbation Theory}{15}
+\contentsline {subsubsection}{\numberline {4.2.2}Averaging Out Background Radiation}{19}
+\contentsline {section}{\numberline {5}Conclusion}{21}
+\contentsline {section}{\numberline {}Appendix}{22}
+\contentsline {subsection}{\numberline {A}Verification of Accuracy of Numerical Methods}{22}

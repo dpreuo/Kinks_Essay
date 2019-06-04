@@ -1,4 +1,4 @@
-\documentclass[11pt, oneside]{article}  	% use "amsart" instead of "article" for AMSLaTeX format
+\documentclass[11pt, oneside,titlepage]{article}  	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage[left=2cm,top=3cm,right=2cm,bottom=4cm,head=1cm]{geometry}     
 \geometry{a4paper}          		% ... or a4paper or a5paper or ... 
 
@@ -20,10 +20,9 @@
 
 
 
-\title{Kinks with Long-Range Interactions}
-\author{Peru d'Ornellas}
+\title{Kinks with Long-Range Tails}
+%\author{Peru d'Ornellas}
 \date{}							% Activate to display a given date or no date
-
 
 
 \begin{document}
@@ -71,7 +70,7 @@ T_{01} &= \dot{\phi} \phi'  = -\mathcal{P}. \label{momentum}
  \includegraphics[width=0.8\textwidth]{phi4_potential.png}
  \captionof{figure}{Potential and kink shapes in $\phi^4$ theory} \label{phi4pot}
 \end{figure}
-Kink solutions emerge when the potential has a degenerate set of global minima. Since the dynamics of the system are unaffected by transformations of the form $V(\phi)\rightarrow V(\phi) + c$ for any constant $c$, we may assume that the minima of the potential occur at a set of field values $\phi_n \in \Phi_{\textup{vac}}$, where $V(\phi_n) = 0$. Each minimum of the energy implies the existence a vacuum solution to the field equation consisting of a static flat field where $\phi(x) = \phi_n$ across all of spacetime. If the field is in one vacuum state as $x\rightarrow -\infty$ and a different vacuum as $x\rightarrow \infty$ then a kink appears as the field must interpolate between the two minima over some region of spacetime. This kink is topologically protected, since to remove the kink one would need to shift an infinite length of field from one vacuum into another, costing infinite energy. By organising the minima in order of increasing $\phi$, we can label kink solutions as interpolating from $\phi_n$ to $\phi_{n+1}$ as $x$ goes from $-\infty \rightarrow \infty$ and anti-kink solutions as going from $\phi_n$ to $\phi_{n-1}$.\par
+Kink solutions emerge when the potential has a degenerate set of global minima. Since the dynamics of the system are unaffected by transformations of the form $V(\phi)\rightarrow V(\phi) + c$ for any constant $c$, we may assume that the minima of the potential occur at a set of field values $\phi_n \in \Phi_{\textup{vac}}$, where $V(\phi_n) = 0$. Each minimum of the energy implies the existence a vacuum solution to the field equation consisting of a static flat field where $\phi(x) = \phi_n$ across all of spacetime. If the field is in one vacuum state as $x\rightarrow -\infty$ and a different vacuum as $x\rightarrow \infty$ then a kink appears as the field must interpolate between the two minima over some region of spacetime. This kink is topologically protected, since to remove the kink one would need to shift an infinite length of field from one vacuum into another, costing an infinite amount of energy. By organising the minima in order of increasing $\phi$, we can label kink solutions as interpolating from $\phi_n$ to $\phi_{n+1}$ as $x$ goes from $-\infty \rightarrow \infty$ and anti-kink solutions as going from $\phi_n$ to $\phi_{n-1}$.\par
  The simplest example of such a potential is $\phi^4$ theory, described by $V_{\phi^4} = \frac{1}{2} (1-\phi^2)^2$. This has a minimum at $\phi_{-} = -1$ and at $\phi_{+} = +1$ as shown in fig.~\ref{phi4pot}. It can be shown that kinks take the form $\phi(x) = \tanh(x)$, see \cite{manton-book}.\par
  \begin{wrapfigure}{r}{0.45\textwidth}
 \vspace{-10pt}
@@ -120,7 +119,7 @@ $\phi(\pm\infty)$ will always be an element of $\Phi_{\textup{vac}} = \left \{ -
  Here the parameter $A$ may be interpreted as determining the position of the kink. This expression must be numerically inverted to give the form of the kink, shown in fig.~\ref{phi8kink}, as there is no explicit expression for the inverted kink profile $\phi_\textup{kink}(x)$. It is instructive to examine the asymptotic behaviour of the kink for $\phi$ close to 0 and close to 1. \par
   \begin{wrapfigure}{r}{0.45\textwidth}
 \centering
- \includegraphics[width=0.42\textwidth]{phi8_kink.png}
+ \includegraphics[width=0.45\textwidth]{phi8_kink.png}
  \captionof{figure}{Kink in $\phi^8$ theory} \label{phi8kink}
 \end{wrapfigure}
  On the left hand side of the kink, $\phi = \epsilon$ with $\epsilon$ small and positive. In this case, eqn.~\ref{bogo} reduces to $\frac{\drv \epsilon}{\drv x} = \epsilon^2$, which can be solved to give 
@@ -196,7 +195,7 @@ In what follows, we assume that the majority of the influence of the drag term i
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{asym_tails.png}
-\captionof{figure}{Static and accelerating kink with extrapolated tail behaviour. In both cases blue depicts the shape of the kink and orange shows the extrapolated tail.} \label{tails}
+\captionof{figure}{Static and accelerating kink with extrapolated tail behaviour. The points at which the extrapolated tails diverge are marked with a dashed line.} \label{tails}
 \end{figure}
 We can assume that $\chi$ approximately takes the form of an undeformed kink over its long tail, ensuring that it is a solution of the Bogomolny equation ($\chi' = \frac{\drv W }{\drv \chi}$), with $W$ defined in eqn.~\ref{dw}. Thus, eqn.~\ref{acc_kink} becomes
 \begin{equation}\label{VW}
@@ -287,7 +286,7 @@ We now take a different approach to numerically finding the strength of the forc
  \begin{equation}
  \chi'' - a\chi' - \frac{\drv V }{\drv \chi}=0.
  \end{equation}
- Note that in deriving this differential equation, the only approximation we took was to assume that $\dot{A}$ can be ignored, thus it is exact for deriving the force acting on a static kink, before it has started to move under acceleration.\par
+ Note that in deriving this differential equation, the only approximation we took was to assume that $\dot{A}$ can be ignored, thus it is exact for finding the force acting on a static kink, before it has started to move under acceleration.\par
    \begin{wrapfigure}{r}{0.5\textwidth}
  \vspace{-10pt}
 \centering
@@ -297,11 +296,11 @@ We now take a different approach to numerically finding the strength of the forc
  We examine the differential equation through the lens of the mechanical interpretation, viewing it as describing a particle that starts at a position $\chi(0)$ and moves under negative drag term $-a$ in the potential $- \frac{\drv V }{\drv \chi}$. As explained in \textsection~\ref{kink-kink-analytic}, for every value of $\chi(0)$ there is a unique corresponding value of $a$ such that the motion of the particle will correspond to a valid kink solution. If a is too large, the particle will gain too much energy as it moves through the potential, overshooting the maximum and `falling off' the other side, accelerating towards $\chi \rightarrow +\infty$. If $a$ is too small, the particle will not gain enough energy as it moves through the potential, this means it won't make it up to the maximum of the potential at  $\chi=1$ and will turn back on itself, moving back towards negative $\chi$.\par
  This differential equation is easily solved, again using python's inbuilt ODE solver, \texttt{odeint}. We start with a choice of initial values, $\chi(0)$, $\chi'(0) = 0$ and $a$, and solve it for $\chi(x)$ for $x$ discretised over an array of length 2048.\par
 To determine the correct value of $a$, given $\chi(0)$, we first decide on an upper and lower bound for $a$, $a_\textup{max}$ and $a_\textup{min}$, where we are certain that the particle moving under $\chi(0)$ with $a_\textup{max}$ will overshoot and a particle moving under $a_\textup{min}$ will undershoot. Now we determine the motion of the particle moving under $a_\textup{avg} = \frac{1}{2} \left ( a_\textup{max} + a_\textup{min} \right )$. If the motion under $a_\textup{avg}$ overshoots we know that the correct value of $a$ is somewhere between $a_\textup{min}$ and $a_\textup{avg}$, similarly if it undershoots we know that the correct value is between $a_\textup{avg}$ and $a_\textup{max}$. Thus we set a new pair of bounds $a_\textup{min, new}$ and $a_\textup{max, new}$ and repeat the process. Every time we iterate this step we are halving the size of the window that the correct value of $a$ is in, so we converge very quickly to the correct value. Figure \ref{over_under} shows the motion of the particle for three values of $a$, one with an overshoot, one that is correct and one that causes it to undershoot.\par
-Once we have determined the correct value of $a$, we automatically get an expression for the shape of an accelerating kink for our chosen $\chi(0)$ as the solution of our differential equation. Now the only thing left to do is to find the position of the center of the kink, A, by looking for the point in space where the kink crosses $\chi(A) = \phi_\textup{kink}(x=0) \approx 0.8335$. The force acting on the kink is given by eqn.~\ref{force}, $F = -V[\chi(0)]$. Thus we have arrived at a set of values for the force acting on the kink as a function of the kink separation. The results of this are plotted in fig.`\ref{force_distance_trick}, plotted against the predicted relationship derived in \textsection~\ref{kink-kink-analytic}, $F = 1.4771A^{-4}$. As can clearly be seen, the results are extremely close, with some deviation from the predicted values as the kinks get closer together, which is expected since our analytic methods relied on the kinks being well separated.
+Once we have determined the correct value of $a$, we automatically get an expression for the shape of an accelerating kink for our chosen $\chi(0)$ as the solution of our differential equation. Now the only thing left to do is to find the position of the center of the kink, A, by looking for the point in space where the kink crosses $\chi(A) = \phi_\textup{kink}(x=0) \approx 0.8335$. The force acting on the kink is given by eqn.~\ref{force}, $F = -V[\chi(0)]$. Thus we have arrived at a set of values for the force acting on the kink as a function of the kink separation. The results of this are plotted in fig.~\ref{force_distance_trick}, plotted against the predicted relationship derived in \textsection~\ref{kink-kink-analytic}, $F = 1.4771A^{-4}$. As can clearly be seen, the results are extremely close, with some deviation from the predicted values as the kinks get closer together, which is expected since our analytic methods relied on the kinks being well separated.
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{force_distance_trick.png}
-\captionof{figure}{Left plot shows the relationship between the kink separation and the force acting between the kinks. On the right is the same data plotted on a log-log scale. The predicted results have a polynomial relationship and so appear here as a straight line. It can be seen that the numerically calculated force is slightly weaker than expected when the kinks are close, but extremely close to prediction once the kinks are well separated.} \label{force_distance_trick}
+\captionof{figure}{The left plot shows the relationship between the kink separation and the force acting between the kinks. On the right is the same data plotted on a log-log scale. The predicted results have a polynomial relationship and so appear here as a straight line. It can be seen that the numerically calculated force is slightly weaker than expected when the kinks are close, but extremely close to prediction once the kinks are well separated.} \label{force_distance_trick}
 \end{figure}
 
  \section{Kink-Radiation Interactions}\label{kink_radiation}
@@ -314,8 +313,7 @@ and expand the solution around one of the vacua $\phi = \phi_0 + \xi$, with $\xi
 \begin{equation}
 \ddot{\xi} -\xi'' + \xi V''(\phi_0) = 0
 \end{equation}
-since $V'(\phi_0) = 0$. Thus, for radiation with small amplitude, the EOM is the Klein-Gordon equation, where the `mass term' ($m^2 = V''(\phi_0)$) depends on the choice of vacuum. In $\phi^8$ theory, $V'' = 6\phi^2 -30\phi^4 + 28\phi^6$. Around $\phi_0 = 0$, $m^2 = 0$ - the field is massless - and around $\phi_0 = \pm1$, $m^2 = 4$ - the field is massive.
-We now find plane-wave solutions to the Klein-Gordon equation ($\ddot{\xi} - \xi'' + m^2\xi = 0$) using the ansatz
+since $V'(\phi_0) = 0$. Thus, for radiation with small amplitude, the EOM is the Klein-Gordon equation, where the `mass term' ($m^2 = V''(\phi_0)$) depends on the choice of vacuum. In $\phi^8$ theory, $V'' = 6\phi^2 -30\phi^4 + 28\phi^6$. Around $\phi_0 = 0$, $m^2 = 0$ so the field is massless. Around $\phi_0 = \pm1$, $m^2 = 4$, the field is massive. We now find plane-wave solutions to the Klein-Gordon equation ($\ddot{\xi} - \xi'' + m^2\xi = 0$) using the ansatz
 \begin{equation}
 \xi(x,t) = \mathcal{A}e^{i(kx-\omega t)}.
 \end{equation}
@@ -324,6 +322,11 @@ Plugging this into the KG equation yields the dispersion relation
 \omega^2 = k^2 + m^2.
 \end{equation}
 Thus on the massless side $\omega = |k|$ and on the massive side $\omega = \sqrt{k^2 + 4}$. In this work we will be looking at wave-packet solutions of the Klein-Gordon equations. These are found by integrating a continuous spectrum of plane-wave solutions with gaussian distribution, according to 
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{wavepacket.png}
+\captionof{figure}{An example wave-packet with $k_0$ = 0.2, $\Delta_x = 50$ ($\Delta_k = 0.0001$) and $\tilde{\mathcal{A}} = 0.1$} \label{wavepacket}
+\end{figure}
 \begin{equation}
 \xi (x,t) =\mathcal{A} \int \frac{\drv k}{2\pi} \exp\left[{i(kx-\omega t)} - \frac{(k-k_0)^2}{4\Delta_k^2} \right]
 \end{equation}
@@ -340,11 +343,6 @@ to give
 \xi =\tilde{\mathcal{A}}e^{i(k_0 x-\omega_0 t)} e^{-\frac{x^2}{4\Delta_x^2}}
 \end{equation}
 with $\tilde{\mathcal{A}} = \frac{\mathcal{A}}{\sqrt{\pi}}\Delta_k $ and $\Delta_x^2 = \frac{1}{4\Delta_k^2}$. Note that a small $\Delta_k$ implies that $\Delta_x$ is large, the wave-packet must have large spatial extent. Figure \ref{wavepacket} shows an example wave-packet.
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{wavepacket.png}
-\captionof{figure}{An example wave-packet with $k_0$ = 0.2, $\Delta_x = 50$ ($\Delta_k = 0.0001$) and $\tilde{\mathcal{A}} = 0.1$} \label{wavepacket}
-\end{figure}
 
  \subsection{Numerical Work} \label{kink_rad_numerics}
 We simulate the equations of motion in the same manner as in \textsection \ref{kink_kink_comp}, by splitting the PDE into a large number of coupled ODEs and approximating the spatial derivatives using spectral methods. In this case, however, we are modelling the interactions between a single kink and radiation. To impose periodic boundary conditions onto a field with a single kink only we have to resort to some trickery. We split the field into a static background kink term and a radiation term.
@@ -355,7 +353,7 @@ where $\phi_{\textup{kink}}(x)$ is the static solution for a field containing a 
 \begin{equation}
 \ddot{\xi} - \xi'' - \phi''_\textup{kink} + V' \left( \phi_\textup{kink} + \xi \right)= 0.
 \end{equation}
-Note that all we have done is subtract the static solution for a kink. The kink is still free to move as the system evolves. Any displacement of the kink will also be contained in $\xi(x,t)$, and the final solution is obtained by adding $ \phi_{\textup{kink}}(x)$ and $\xi(x,t)$. The main purpose of subtracting away the static kink solution is to enforce periodic boundary conditions, allowing us to use spectral methods in our numerics. Figure \ref{kink-rad-init} shows a profile for a field containing a kink and radiation, and the same field with the kink subtracted away. We have used wave-packets rather than plane waves, again in order to maintain periodic boundary conditions.\par
+Note that all we have done is subtract the static solution for a kink. The kink is still free to move as the system evolves. Any displacement of the kink will also be contained in $\xi(x,t)$, and the final solution is obtained by adding $ \phi_{\textup{kink}}(x)$ and $\xi(x,t)$. The main purpose of subtracting away the static kink solution is to enforce periodic boundary conditions, allowing us to use spectral methods in our numerics. Figure \ref{kink-rad-init} shows a profile for a field containing a kink and radiation, and the same field with the kink subtracted away. We have used wave-packets rather than plane waves, again in order to preserve periodic boundary conditions.\par
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{kink_rad_init}
@@ -370,19 +368,19 @@ We ran two sets of simulations, one with radiation approaching a kink from the l
 \includegraphics[width=0.3\textwidth]{MomentumDensityk15Massless.pdf}
 \includegraphics[width=0.3\textwidth]{MomentumDensityk20Massless.pdf}
 \includegraphics[width=0.3\textwidth]{MomentumDensityk275Massless.pdf}
-\captionof{figure}{Plots of the momentum density of the field as a function of space and time coordinates for a set of wave-packets with central wavenumber $k = 1.5$, 2.0 and 2.75. In this image, blue marks regions negative momentum and red marks regions of positive momentum.} \label{radiation_results}
+\captionof{figure}{Plots of the momentum density of the field as a function of space and time coordinates for a set of wave-packets with central wavenumber $k = 1.5$, 2.0 and 2.75. In this image, blue marks regions of negative momentum and red marks regions of positive momentum.} \label{radiation_results}
 \end{figure}
 In all simulations the kink is initially centred at $x=0$ and the wave-packet starts at position $x=\pm150$, with the sign determining whether it starts on the massive or massless side. In order to display the results clearly, the momentum density is calculated and plotted, clearly depicting the motion of the wave-packet. The kink is initially static at $x=0$, so has no momentum and does not show up in the plot. After collision with radiation, however, it can be clearly seen. These results are shown in fig.~\ref{radiation_results}. A comprehensive set of results, complete with animations, may be found at https://github.com/dpreuo/Kinks-and-radiation\par
 There are two effects taking place here worth discussing. The first and most striking is that radiation coming from the massless side of the kink is reflected for $k < 2$ and transmitted for $k>2$. At $k = 2$ it is majority reflected, but a small amount is transmitted. This effect is most clearly seen in animations of the collision, since not enough radiation is transmitted to show up clearly in the momentum plots. The second important effect taking place here is that regardless of the wavenumber or direction of incoming radiation, the kink always exits the collision with positive momentum. 
 
  \subsection{Analytic Models} \label{rad-anal}
- We propose two models for understanding the behaviour seen in \textsection \ref{kink_rad_numerics}. The first looks at perturbatively modelling the potential felt by radiation as it crosses the kink. By calculating the coefficients of reflection and transmission it is possible to infer the strength and direction of the force acting on the kink. Secondly we will look at the effect of background radiation on the potential by averaging out a small background radiation term to obtain an effective potential acting on the kink.
+ We propose two models for understanding the behaviour seen in \textsection \ref{kink_rad_numerics}. The first looks at perturbatively modelling the potential felt by radiation as it crosses the kink. By calculating the coefficients of reflection and transmission it is possible to infer the strength and direction of the force acting on the kink. Secondly we will look at the effect of background radiation on the potential by averaging out a small background term to obtain an effective potential acting on the kink.
  \subsubsection{Perturbation Theory} \label{pert_theory}
 Start with the equations of motion for a static background containing a kink at $x=0$, $\phi_\textup{kink}(x)$ and a small radiation term $\xi(x,t)$
 \begin{equation}\label{EOM_rad}
 \ddot{\xi} - \xi'' - \phi''_\textup{kink} + V' \left( \phi_\textup{kink} + \xi \right)= 0.
 \end{equation}
-We may Taylor expand the potential to first order, treating $\xi$ as a small perturbation:
+We Taylor expand the potential to first order, treating $\xi$ as a small perturbation:
  \begin{equation}
  V' \left( \phi_\textup{kink} + \xi \right) = V' \left( \phi_\textup{kink} \right ) + \xi V'' \left( \phi_\textup{kink}\right) + \mathcal{O}\left(\xi^2 \right ).
  \end{equation}
@@ -470,7 +468,7 @@ A plot of the force as a function of frequency for waves approaching the kink fr
 \centering
 \includegraphics[width=0.4\textwidth]{force_left.png}
 \includegraphics[width=0.4\textwidth]{force_right.png}
-\captionof{figure}{Plots showing strength of force acting on the kink for incident radiation coming from the massive and massless sides as a function of frequency} \label{force_left}
+\captionof{figure}{Plots showing the strength of force acting on the kink from incident radiation coming from the massive and massless sides as a function of frequency} \label{force_left}
 \end{figure}
 Now we repeat the calculation for a plane wave with frequency $\omega$ coming from the massive side of the kink. In this case, since the wave starts in the region where $\omega^2 = k^2 + m^2$, waves with $\omega < 2$ are forbidden so $\alpha$ is always real here. \par
 We propose a field profile containing reflected and transmitted waves
@@ -497,7 +495,7 @@ F = \omega^2 \alpha^2 \frac{1-\alpha^2}{(1+\alpha)^2} .
 \end{equation}
 This is plotted in fig.~\ref{force_left}. In both cases the overall force on the kink is positive, supporting the results from our numerical models. A notable feature is that as the frequency of radiation becomes large, the force exerted on the kink from either side tends to 1. This means that, regardless of the direction of incidence, radiation hitting a kink with high frequency will push the kink in the same direction with approximately the same force. We have set the amplitude of the incident radiation to be 1 in all cases here. Including amplitude would add a multiplicative $\mathcal{A}^2$ dependence to all of our force calculations here. This means that for large $\omega$, the strength of force acting on the kink is independent of $\omega$ and tends towards $F = \mathcal{A}^2$. 
 
-\subsection{Averaging Out Background Radiation} \label{avg_out}
+\subsubsection{Averaging Out Background Radiation} \label{avg_out}
 We now take a different approach to understanding the physics taking place here,  adding in a general radiation term to the field and averaging it out in order to gain a broad understanding of the effective potential felt by a kink in the presence of small background radiation. We start in the same way as in \textsection \ref{pert_theory}, by expressing the field in terms of a kink term $\varphi$ and a small radiation term $\xi$, assuming that $\xi \ll \varphi$. We also make the further assumption that the average value $\left \langle\xi\right \rangle$ is 0 and that $\left \langle\xi ^ 2\right \rangle > 0$ and examine the effect of $\xi$ on the potential $V(\varphi+\xi)$. Taylor expanding the potential gives:
 \begin{equation}
 V\left ( \varphi+\xi \right ) = V\left ( \varphi \right ) + \xi V'\left ( \varphi \right ) + \frac{\xi^2}{2}V''\left ( \varphi \right ) + \mathcal{O}(\xi^3).
@@ -523,7 +521,7 @@ V(\varphi) &= \frac{1}{2} \varphi \left ( 1- \varphi^2 \right )^2, \; \;V''(\var
  \includegraphics[width=0.45\textwidth]{potential_averaged.png}
  \captionof{figure}{Effective potential for $\left \langle \xi^2 \right \rangle = 0$, 0.003 and 0.0009.} \label{potential_averaged}
 \end{wrapfigure}
-Note that we have not said anything about the profile of $\xi$ other than that it is small when compared to $\varphi$ and has a wave profile, ensuring that $\xi$ and $\partial \xi$ average to 0. Figure \ref{potential_averaged} shows the effect of introducing a small $\left \langle \xi^2 \right \rangle$ term to the effective potential. As can be seen, averaging out radiation breaks the degeneracy of the ground state. The $\varphi = 0$ ground state becomes the global minimum, since $V''(0) = 0$, but the $\varphi = \pm1$ states both now have nonzero energy (as well as having the position of the minimum displaced slightly).\par
+Note that we have not said anything about the profile of $\xi$ other than that it is small when compared to $\varphi$ and has a wave-like shape, ensuring that $\xi$ and $\partial \xi$ average to 0. Figure \ref{potential_averaged} shows the effect of introducing a small $\left \langle \xi^2 \right \rangle$ term to the effective potential. As can be seen, averaging out radiation breaks the degeneracy of the ground state. The $\varphi = 0$ ground state becomes the global minimum, since $V''(0) = 0$, but the $\varphi = \pm1$ states both now have nonzero energy (as well as having the position of the minimum displaced slightly).\par
 If we assume that the value of $\left \langle \xi^2 \right \rangle$ is small enough that the position of the minima at $\xi = \pm 1$ is not significantly affected, we can approximate the shift in energy of these two ground states using $V(\pm1) = 0$ and $V''(\pm 1) = 4 $.
 \begin{equation}
 V_{\textup{eff}}(\pm1) = 2 \left \langle \xi^2 \right \rangle.
@@ -539,10 +537,10 @@ F = \mathcal{A}^2.
 This matches up with the results we got in the previous section in the limit of large $\omega$, where the kink becomes transparent. Additionally, in this limit $\sqrt{\omega^2 - 4} \simeq \omega$ so the wavenumber of the radiation is similar on the massless and massive sides of the kink. This means that $\xi = \mathcal{A}\sin( - \omega t \pm k x)$ is a valid solution for the radiation field on both sides of the kink, since the values of $\omega$ and $k$ on either side become identical.
 
 \section{Conclusion}
-We have investigated the dynamics of kinks in $\phi^8$ theory, where on one side the field is massive and on the other the field is massless, predicting that an interacting kink and anti-kink should have an attractive force between them that scales with the fourth power of the separation. These interactions were numerically simulated, finding excellent agreement with theory when the kinks are well separated, but that our predictions became less accurate as the kinks got closer together, with the force appearing to be weaker than our predictions. This breakdown was expected, since during the analytics we made the assumption that the kinks were well separated.\par
+We have investigated the dynamics of kinks in $\phi^8$ theory, where on one side the field is massive and on the other the field is massless, predicting that an interacting kink and anti-kink should have an attractive force between them that scales with the fourth power of the separation. These interactions were numerically simulated, finding excellent agreement with theory when the kinks are well separated. However our models became less accurate as the kinks got closer together, with the force appearing to be weaker than predicted. This breakdown was expected, since our analytic results were based on the assumption that the kinks were well separated.\par
 The primary difficulty encountered in numerically simulating the interacting kinks was in initialising the field into an appropriate configuration, since the results had an extreme sensitivity to imperfections in initial conditions. Any deviation from the ideal starting point introduced radiation into the system. We found that the sensitivity of the kinks dynamics to radiation was due to the asymmetric nature of interaction between radiation and a kink. Any amount of radiation, coming from any direction would always have the effect of accelerating a kink towards the massive side. Furthermore we found that as the frequency of radiation is increased, the dynamics of the interaction become truly insensitive to the direction of incident radiation, exerting a force of the same strength and direction on the kink.\par
 These results have interesting consequences when thinking about such systems that might exist in nature. In particular, it suggests that a field where such kinks manifest, perhaps as boundaries in higher than $1 + 1$ dimensional space, would only be able to contain stable kinks in the complete absence of any other disturbances to the field. Any radiation whatsoever would have the effect of accelerating kinks and anti-kinks towards one another, which would then annihilate, creating more radiation that would go on the affect other kinks in the same way. A discussion of this effect is given in \cite{Roma_czukiewicz_2017}.\par
-There are a number of further steps that can be taken to better understand these phenomena. The most obvious next step would be to extend the discussion in \textsection \ref{rad-anal}. We have only looked at the interaction of kinks and radiation to first order, with the radiation as a small perturbation to the static field. Furthermore we approximated the background potential as a step function. Thus it would be worth looking at more accurate approximations for the background potential, in particular taking into account the region of space where $m^2 < 0$. Furthermore it would be worthwhile to look at higher order terms in the expansion of the field, as is done in \cite{rad_pressure}, where the interactions between radiation $\phi^4$ and higher order kinks is examined. Since the interaction is fundamentally nonlinear, there will be frequency mixing effects taking place, such as second harmonic generation, that we have neglected by only expanding to first order. It is worth noting that \cite{rad_pressure} only examines theories where the mass on either side of the kink is the same, so the majority of effects observed here do not occur. Furthermore the forces acting on kinks in their treatment are largely due to higher order terms in the Taylor expansion, so we may expect them to be substantially weaker than the dominant effects found here with $\phi^8$ kinks.\par
+There are a number of further steps that can be taken to better understand these phenomena. The most obvious next step would be to extend the discussion in \textsection \ref{rad-anal}. We have only looked at the interaction of kinks and radiation to first order, with the radiation as a small perturbation to the static field. Furthermore we approximated the background potential as a step function. Thus it would be worth looking at more accurate approximations for the background potential, in particular taking into account the region of space where $m^2 < 0$. Furthermore it would be worthwhile to look at higher order terms in the expansion of the field, as is done in \cite{rad_pressure}, where the interactions between radiation and kinks is examined in a number of potentials, including $\phi^4$. Since the interaction is fundamentally nonlinear, there will be frequency mixing effects taking place, such as second harmonic generation, that we have neglected by only expanding to first order. It is worth noting that \cite{rad_pressure} only examines theories where the mass on either side of the kink is the same, so the majority of effects observed here do not occur. Furthermore the forces acting on kinks in their treatment are largely due to higher order terms in the Taylor expansion, so we may expect them to be substantially weaker than the dominant effects found here with $\phi^8$ kinks.\par
 Finally, another possible extension would be to quantise the field around the kink and examine the interactions between the kink and radiation in this context. The results from \textsection \ref{avg_out} suggest that it would be useful to examine the way this theory changes under renormalisation, potentially offering a deeper insight into the ways that theories of this type might manifest in real physical systems.
 
 
@@ -551,16 +549,15 @@ Finally, another possible extension would be to quantise the field around the ki
 
  \renewcommand\thesection{}
  \renewcommand\thesubsection{\Alph{subsection}}
- \section{Appendices}
- \subsection{Spectral Differentiation Methods} \label{spectral}
+ \section{Appendix}
  \subsection{Verification of Accuracy of Numerical Methods}\label{tests}
  The validity of our numerical simulation is tested by inputting a test field. The field is allowed to propagate under the equations of motion as described in \textsection \ref{kink_kink_comp}. The momentum and energy-density is then calculated for each moment in time, and integrated across the whole of space using the trapezium rule. The initial field, $\phi$ and $\dot{\phi}$ are shown in fig.~\ref{test_field}, as well as the plots of total momentum and energy against time.\par
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{test_field_energy.png}
+\includegraphics[width=0.8\textwidth]{test_field_energy.png}
 \captionof{figure}{Plots showing the initial $\phi$ and $\dot{\phi}$ fields used, and the total energy and momentum calculated as a function of time} \label{test_field}
 \end{figure}
-Clearly neither the energy, nor the momentum are perfectly conserved, however the variation is extremely small (of the order $10^{-6}$). It is most likely that this variation is due to inaccuracies in numerically integrating 
+Clearly neither the energy, nor the momentum are perfectly conserved, however the variation is extremely small (of the order $10^{-6}$). It is most likely that this variation is due to inaccuracies from numerically integrating the energy and momentum densities over the field. 
 
 
 %\end{multicols}
